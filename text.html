@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="text.css">
+</head>
+
+<body>
+    <div data-role="page" id="pageone">
+        <div data-role="header">
+            <a href="#selectCity" class="ui-btn ui-corner-all ui-shadow ui-icon-bullets ui-btn-icon-left">打开面板</a>
+            <h1>当前城市：北京</h1>
+        </div>
+
+        <div data-role="panel" id="selectCity">
+            <h2>当前城市:北京</h2>
+            <p>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus">添加城市</a>
+            </p>
+        </div>
+
+        <div data-role="content" class="ui-content">
+
+            <div class="main-div">
+                <p class="temp">5°</p>
+                <p class="weather">晴空万里</p>
+                <!-- <img class="bg-img" src="https://ws1.sinaimg.cn/large/006aWQZaly1fxi8wf3jp1j30ku0l440k.jpg" /> -->
+            </div>
+
+            <div class="horizontal-container">
+                <div>
+                    <p>
+                        空气质量指数：
+                        <span>72</span>
+                        <span>良</span>
+                    </p>
+                    <p>
+                        PM2.5:
+                        <span>31</span>
+                    </p>
+                    <p>
+                        PM10:
+                        <span>93</span>
+                    </p>
+                    <p>
+                        建议:
+                        <span>对出行没有太大影响</span>
+                    </p>
+                </div>
+            </div>
+
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-shadow ui-corner-all">显示未来天气</a>
+
+            <div data-role="popup" id="myPopup" class="ui-content">
+                <h3>欢迎!</h3>
+                <p>周一晴，气温0°~10°，AQI40，适宜出行！</p>
+                <p>周二晴，气温0°~10°，AQI40，适宜出行！</p>
+                <p>周三晴，气温0°~10°，AQI40，适宜出行！</p>
+                <p>周四晴，气温0°~10°，AQI40，适宜出行！</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
